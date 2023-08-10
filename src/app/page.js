@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="flex min-h-screen justify-between flex-col p-16 text-lg">
+    <main className="flex min-h-screen justify-between flex-col p-10 text-lg">
       <section>
         <h1>
           Mauricio Uehara
