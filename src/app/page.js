@@ -2,8 +2,8 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen">
-      <section className="flex flex-1 justify-between flex-col p-10 text-lg">
+    <main className="sm:flex sm:min-h-screen sm:flex-row">
+      <section className="flex flex-1 justify-between flex-col p-10 h-[75dvh] sm:min-h-screen">
         <section>
           <h1>
             Mauricio Uehara
@@ -26,70 +26,63 @@ export default function Home() {
           </ul>
         </section>
       </section>
-      <section className="flex flex-wrap flex-1 p-10 text-lg gap-20 h-[100dvh] overflow-scroll">
-        <article className="flex flex-col flex-1 min-w-[480px] justify-center">
+      <section className="flex-1 p-10 sm:h-[100dvh] sm:overflow-scroll grid sm:grid-cols-[repeat(auto-fill,minmax(360px,1fr))] gap-x-10 gap-y-24 justify-items-center">
+        <article className="flex flex-col">
           <figure>
             <Image
-              src="/pier.png"
+              src="/pipo-black.png"
               width={500}
               height={500}
-              alt="White Pier's logo on black background"
+              alt="Black circle on black background"
               style={{
                 width: "100%",
                 height: "auto",
                 maxWidth: "480px"}}
             />
           </figure>
-          <h3 className="mt-4">Pier</h3>
+          <div className="mt-4 flex justify-between items-baseline">
+            <h3>Pipo Saúde</h3>
+            <span className="text-xs text-slate-400">Coming soon</span>
+          </div>
           <h4 className="text-slate-400">Design + Development</h4>
         </article>
-        <article className="flex flex-col flex-1 min-w-[480px]">
+        <article className="flex flex-col">
           <figure>
             <Image
-              src="/pipo.png"
+              src="/pier-black.png"
               width={500}
               height={500}
-              alt="White Pier's logo on black background"
+              alt="Black slash on black background"
               style={{
                 width: "100%",
                 height: "auto",
                 maxWidth: "480px"}}
             />
           </figure>
-          <h3 className="mt-4">Pipo Saúde</h3>
+          <div className="mt-4 flex justify-between items-baseline">
+            <h3>Pier</h3>
+            <span className="text-xs text-slate-400">Coming soon</span>
+          </div>
           <h4 className="text-slate-400">Design + Development</h4>
         </article>
-        <article className="flex flex-col flex-1 min-w-[480px]">
+        <article className="flex flex-col">
           <figure>
             <Image
-              src="/pier.png"
+              src="/pier-black-redesign.png"
               width={500}
               height={500}
-              alt="White Pier's logo on black background"
+              alt="Black striped circled on black background"
               style={{
                 width: "100%",
                 height: "auto",
                 maxWidth: "480px"}}
             />
           </figure>
-          <h3 className="mt-4">Pier</h3>
-          <h4 className="text-slate-400">Design + Development</h4>
-        </article>
-        <article className="flex flex-col flex-1 min-w-[480px]">
-          <figure>
-            <Image
-              src="/pipo.png"
-              width={500}
-              height={500}
-              alt="White Pier's logo on black background"
-              style={{
-                width: "100%",
-                height: "auto",
-                maxWidth: "480px"}}
-            />
-          </figure>
-          <h3 className="mt-4">Pipo Saúde</h3>
-          <h4 className="text-slate-400">Design + Development</h4>
+          <div className="mt-4 flex justify-between items-baseline">
+            <h3>Pier Redesign</h3>
+            <span className="text-xs text-slate-400">Coming soon</span>
+          </div>
+          <h4 className="text-slate-400">Design</h4>
         </article>
       </section>
     </main>
