@@ -1,4 +1,5 @@
-import Image from 'next/image'
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -19,41 +20,42 @@ export default function Home() {
           </div>
       </section>
       <section className="text-2xl grid grid-cols-[repeat(auto-fit,minmax(360px,1fr))] gap-x-10 gap-y-24 justify-items-center">
-        <article className="flex flex-col relative">
-          <figure>
-            <Image
-              src="/pipo-black.png"
-              width={500}
-              height={500}
-              alt="Black circle on black background"
-              style={{
-                width: "100%",
-                height: "auto",
-                maxWidth: "480px"}}
-            />
-          </figure>
-          <h3 className="mt-8">Pipo Saúde</h3>
-          <h4 className="text-slate-400">Design, Coding</h4>
-          <span className="text-xs text-slate-400 absolute top-6 left-6 p-3 bg-black">Coming soon</span>
-        </article>
-        <article className="flex flex-col relative">
-          <figure>
-            <Image
-              src="/pier-black.png"
-              width={500}
-              height={500}
-              alt="Black slash on black background"
-              style={{
-                width: "100%",
-                height: "auto",
-                maxWidth: "480px"}}
-            />
-          </figure>
-          <h3 className="mt-8">Pier</h3>
-          <h4 className="text-slate-400">Design, Coding</h4>
-          <span className="text-xs text-slate-400 absolute top-6 left-6 p-3 bg-black">Coming soon</span>
-        </article>
-        <article className="flex flex-col relative">
+        <Link href="/work/pier" className="group">
+          <article className="flex flex-col relative">
+            <figure>
+              <Image
+                src="/pier-black.png"
+                width={500}
+                height={500}
+                alt="Black slash on black background"
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  maxWidth: "480px"}}
+              />
+            </figure>
+            <h3 className="mt-8 group-hover:text-lime-300">Pier</h3>
+            <h4 className="text-slate-400">Design, Development</h4>
+          </article>
+        </Link>
+        <article className="flex flex-col relative opacity-50">
+            <figure>
+              <Image
+                src="/pipo-black.png"
+                width={500}
+                height={500}
+                alt="Black circle on black background"
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  maxWidth: "480px"}}
+              />
+            </figure>
+            <h3 className="mt-8">Pipo Saúde</h3>
+            <h4 className="text-slate-400">Design, Coding</h4>
+            <span className="text-xs text-slate-400 absolute top-6 left-6 p-3 bg-black">Coming soon</span>
+          </article>
+        <article className="flex flex-col relative opacity-50">
           <figure>
             <Image
               src="/pier-black-redesign.png"
