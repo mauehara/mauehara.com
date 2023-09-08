@@ -78,23 +78,23 @@ export default function Page() {
         <h4 className='text-8xl mb-4'>2</h4>
         <p className='text-sm'>Investment rounds</p>
       </div>
-      <figure className="col-span-3 mt-16 mb-24 sm:block hidden">
+      <figure className="col-span-full sm:col-span-3 mt-16 mb-24">
         <Image
           src="/pier-mobile.png"
           width={3000}
           height={3000}
-          alt="Screenshot of the product homepage"
+          alt="Screenshot of the product mobile app"
           style={{
             width: "100%",
             height: "auto",}}
         />
       </figure>
-      <figure className="col-span-3 mt-16 mb-24 sm:block hidden">
+      <figure className="col-span-full sm:col-span-3 mt-16 mb-24">
         <Image
           src="/pier-mobile-2.png"
           width={3000}
           height={3000}
-          alt="Screenshot of the product homepage"
+          alt="Screenshot of the product"
           style={{
             width: "100%",
             height: "auto",}}
