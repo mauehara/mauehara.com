@@ -19,7 +19,7 @@ export default function Home() {
             </ul>
           </div>
       </section>
-      <section className="text-2xl grid grid-cols-[repeat(auto-fit,minmax(360px,1fr))] gap-x-10 gap-y-24 justify-items-center">
+      <section className="text-2xl grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-x-10 gap-y-24 justify-items-center">
         <Link href="/work/pier" className="group">
           <article className="flex flex-col relative">
             <figure>
@@ -34,8 +34,26 @@ export default function Home() {
                   maxWidth: "480px"}}
               />
             </figure>
-            <h3 className="mt-8 group-hover:text-lime-300">Pier</h3>
+            <h3 className="mt-8 group-hover:text-lime-300">Pier <span className="[font-variant-caps:all-small-caps]">MVP</span></h3>
             <h4 className="text-slate-400">Design, Development</h4>
+          </article>
+        </Link>
+        <Link href="/work/pier-redesign" className="group">
+          <article className="flex flex-col relative">
+            <figure>
+              <Image
+                src="/pier-black-redesign.png"
+                width={500}
+                height={500}
+                alt="Black striped circled on black background"
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  maxWidth: "480px"}}
+              />
+            </figure>
+            <h3 className="mt-8 group-hover:text-lime-300">Pier</h3>
+            <h4 className="text-slate-400">Design</h4>
           </article>
         </Link>
         <article className="flex flex-col relative opacity-50">
@@ -55,23 +73,6 @@ export default function Home() {
             <h4 className="text-slate-400">Design, Coding</h4>
             <span className="text-xs text-slate-400 absolute top-6 left-6 p-3 bg-black">Coming soon</span>
           </article>
-        <article className="flex flex-col relative opacity-50">
-          <figure>
-            <Image
-              src="/pier-black-redesign.png"
-              width={500}
-              height={500}
-              alt="Black striped circled on black background"
-              style={{
-                width: "100%",
-                height: "auto",
-                maxWidth: "480px"}}
-            />
-          </figure>
-          <h3 className="mt-8">Pier Redesign</h3>
-          <h4 className="text-slate-400">Design</h4>
-          <span className="text-xs text-slate-400 absolute top-6 left-6 p-3 bg-black">Coming soon</span>
-        </article>
       </section>
       <footer className='text-2xl mt-60 text-slate-600'>© {new Date().getFullYear()}</footer>
     </main>

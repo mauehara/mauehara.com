@@ -1,34 +1,25 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import coverImg from 'public/pier-cover-2.png';
 
 export default function Page() {
   return (
     <main className="font-normal text-xl mb-10 sm:mt-48 mt-24 w-full mx-auto max-w-[1632px] sm:grid sm:grid-cols-6 p-10 gap-8">
       <header className='sm:col-span-2'>
         <h1 className='tracking-tight sm:text-6xl text-3xl leading-tight'> 
-          Pier
+          Pier <span className="[font-variant-caps:all-small-caps]">MVP</span>
         </h1>
       </header>
       <h2 className='tracking-tight sm:text-6xl text-3xl leading-tight sm:col-span-3 col-span-full sm:text-white text-slate-400'>
         The first Brazilian digital insurance company 
       </h2>
-      <figure className="col-span-full sm:mt-64 mt-32 mb-24 sm:block hidden">
+      <figure className="col-span-full sm:mt-64 mt-32 mb-24">
         <Image
-          src="/pier-cover.png"
+          src={coverImg}
           width={3000}
           height={3000}
           alt="Screenshot of the product homepage"
-          style={{
-            width: "100%",
-            height: "auto",}}
-        />
-      </figure>
-      <figure className="col-span-full sm:mt-64 mt-32 mb-24 block sm:hidden">
-        <Image
-          src="/pier-cover-sm.png"
-          width={1300}
-          height={1300}
-          alt="Screenshot of the product homepage"
+          placeholder="blur"
           style={{
             width: "100%",
             height: "auto",}}
