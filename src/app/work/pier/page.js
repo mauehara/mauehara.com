@@ -7,7 +7,7 @@ export default function Page() {
     <main className="font-normal text-xl mb-10 sm:mt-48 mt-24 w-full mx-auto max-w-[1632px] sm:grid sm:grid-cols-6 p-10 gap-8">
       <header className='sm:col-span-2'>
         <h1 className='tracking-tight sm:text-6xl text-3xl leading-tight'> 
-          Pier <span className="[font-variant-caps:all-small-caps]">MVP</span>
+          Pier
         </h1>
       </header>
       <h2 className='tracking-tight sm:text-6xl text-3xl leading-tight sm:col-span-3 col-span-full sm:text-white text-slate-400'>
