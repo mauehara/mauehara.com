@@ -10,7 +10,7 @@ export default function Home() {
       <section className="h-[66vh] flex flex-col justify-center flex-1">
           <div className="max-w-4xl">
             <h1>
-              I design and build digital products. I'm currently working as a design engineer at <a className="hover:text-lime-300 hover:after:bg-lime-300 transition-colors after:transition-colors after:content-[''] after:h-px after:w-full after:absolute relative after:left-0 after:bottom-[-4px] after:bg-slate-600" href="https://www.piposaude.com.br" target="_blank">✴︎ Pipo Saúde</a>.
+              I design and build digital products. I'm currently working as a design engineer at <a className="hover:text-lime-300 hover:after:bg-lime-300 transition-colors after:transition-colors after:content-[''] after:h-px after:w-full after:absolute relative after:left-0 after:bottom-[-4px] after:bg-slate-600" href="https://www.ashbyhq.com" target="_blank">✴︎ Ashby</a>.
             </h1>
             <ul className="flex gap-6 w-4xl mt-16">
               <li>
